@@ -1,0 +1,212 @@
+.facilities_gallery_heading {
+  margin-left: 2.5rem;
+}
+
+.facilities_gallery_heading > h1 {
+  font-size: 26px;
+  color: var(--secondary);
+  text-transform: uppercase;
+  margin-top: 0;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.facilities_gallery_heading > div {
+  border-bottom: 2px solid var(--secondary);
+  width: 250px;
+  margin: 0;
+  margin-top: 12px !important;
+}
+
+.facilities .facilities-carousel.owl-carousel {
+  position: relative;
+}
+
+.facilities .facilities-carousel .owl-nav .owl-prev {
+  position: absolute;
+  top: 50%;
+  right: -10%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  background: transparent;
+  color: var(--secondary);
+  transition: 0.5s;
+  border: 1px solid var(--secondary);
+}
+
+.facilities .facilities-carousel .owl-nav .owl-next {
+  position: absolute;
+  top: 65%;
+  right: -15%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  background: transparent;
+  color: var(--secondary);
+  transition: 0.5s;
+  border: 1px solid var(--secondary);
+}
+
+.facilities-case-item img {
+  object-fit: cover;
+  transition: 0.5s;
+  filter: brightness(30%);
+}
+
+.facilities-case-item:hover img {
+  /* transform: scale(1.05);
+  cursor: pointer; */
+  transform: scale(1.05);
+  filter: brightness(100%);
+  cursor: pointer;
+}
+
+.amenities_card_icon {
+  transition: all 0.5s;
+}
+
+.facilities-case-item:hover .amenities_card_icon {
+  opacity: 0;
+}
+
+/*TODO CAROUSEL GALLERY START LEFT CAROUSEL RIGHT NAV END */
+/*! CAROUSEL GALLERY START LEFT CAROUSEL RIGHT NAV START */
+
+.functionality_gallery_heading {
+  margin-left: 26%;
+}
+
+.functionality_gallery_heading > h1 {
+  font-size: 26px;
+  color: var(--secondary);
+  text-transform: uppercase;
+  margin-top: 0;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.functionality_gallery_heading > div {
+  border-bottom: 2px solid var(--secondary);
+  width: 250px;
+  margin: 0;
+  margin-top: 12px !important;
+}
+
+.functionality-case-item img {
+  object-fit: cover;
+  transition: 0.5s;
+  filter: brightness(30%);
+}
+
+.functionality-case-item:hover img {
+  transform: scale(1.05);
+  cursor: pointer;
+  filter: brightness(100%);
+}
+
+.amenities_card_icon {
+  transition: all 0.5s;
+}
+
+.functionality-case-item:hover .amenities_card_icon {
+  opacity: 0;
+}
+
+.functionality .functionality-carousel.owl-carousel {
+  position: relative;
+}
+
+.functionality .functionality-carousel .owl-nav .owl-prev {
+  position: absolute;
+  top: 50%;
+  left: -16%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  background: transparent;
+  color: var(--secondary);
+  transition: 0.5s;
+  border: 1px solid var(--secondary);
+}
+
+.functionality .functionality-carousel .owl-nav .owl-next {
+  position: absolute;
+  top: 65%;
+  left: -11%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  background: transparent;
+  color: var(--secondary);
+  transition: 0.5s;
+  border: 1px solid var(--secondary);
+}
+
+@media (max-width: 992px) {
+  .facilities .facilities-carousel .owl-nav .owl-prev {
+    display: none;
+  }
+
+  .facilities .facilities-carousel .owl-nav .owl-next {
+    display: none;
+  }
+
+  .facilities_gallery_heading {
+    margin-left: auto;
+    text-align: center;
+  }
+
+  .facilities_gallery_heading > h1 {
+    font-size: 20px;
+  }
+
+  .facilities_gallery_heading > div {
+    width: 150px;
+    margin: auto;
+    margin-top: 12px !important;
+  }
+
+  .functionality .functionality-carousel .owl-nav .owl-prev {
+    display: none;
+  }
+
+  .functionality .functionality-carousel .owl-nav .owl-next {
+    display: none;
+  }
+
+  .functionality_gallery_heading {
+    margin-left: auto;
+    text-align: center;
+  }
+
+  .functionality_gallery_heading > h1 {
+    font-size: 20px;
+  }
+
+  .functionality_gallery_heading > div {
+    width: 150px;
+    margin: auto;
+    margin-top: 12px !important;
+  }
+}

@@ -1,0 +1,74 @@
+.causes .causes-item {
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px;
+  background-color: var(--white);
+}
+
+.causes .causes-item::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 3px;
+  background: var(--secondary);
+  transition: width 0.3s;
+}
+
+.causes .causes-item:hover::after {
+  width: 100%;
+}
+
+.causes .causes-item .causes-img {
+  position: relative;
+}
+
+.causes .causes-item .causes-img .causes-link {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0 !important;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  transition: 0.5s;
+}
+
+.causes .causes-item .causes-img:hover .causes-link {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.causes .causes-item .causes-img img {
+  transition: 0.5s;
+}
+
+.causes .causes-item:hover img {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.causes .causes-item:hover {
+  cursor: pointer;
+}
+
+.causes .causes-item .causes-content {
+  background: var(--white);
+  border-top: 0;
+  text-align: center;
+}
+
+.causes .causes-item .causes-content h4 {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 992px) {
+  .causes .causes-item .causes-content h4 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .causes .causes-item .causes-content h4 {
+    font-size: 1.5rem;
+  }
+}

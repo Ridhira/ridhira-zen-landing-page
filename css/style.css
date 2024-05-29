@@ -1,0 +1,664 @@
+/********** Template CSS **********/
+
+:root {
+  --primary: #232b36;
+  --secondary: #d2a765;
+  /* --tertiary: #6d6f71; */
+  --tertiary: #25282a;
+  --button-color: #232b36;
+  --button-color-hover: #7e5b51;
+  --light: #917e69;
+  --dark: #3a262d;
+  --solid: #8c796e;
+  --white: #fff;
+  --grey: #999;
+  --black: #000;
+  --grey-1: #e7e7e7;
+}
+
+html {
+  font-family: "Poppins" !important;
+}
+
+.heading-0 {
+  font-size: 3rem !important;
+}
+
+.heading-1 {
+  font-size: 2.6rem !important;
+  font-family: "Poppins" !important;
+}
+
+.heading-2 {
+  font-size: 2.2rem !important;
+  font-family: "Poppins" !important;
+}
+
+.heading-3 {
+  font-size: 1.8rem !important;
+  font-family: "Poppins" !important;
+}
+
+.heading-4 {
+  font-size: 1.4rem !important;
+  font-family: "Poppins" !important;
+}
+
+.paragraph-1 {
+  font-size: 1rem !important;
+  font-family: "Poppins" !important;
+  color: var(--tertiary);
+}
+
+.paragraph-2 {
+  font-size: 0.8rem !important;
+}
+
+.back-to-top {
+  position: fixed;
+  display: none;
+  right: 30px;
+  bottom: 95px;
+  z-index: 99;
+}
+
+/*** Spinner Start ***/
+#spinner {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease-out, visibility 0s linear 0.5s;
+  z-index: 99999;
+}
+
+#spinner.show {
+  transition: opacity 0.5s ease-out, visibility 0s linear 0s;
+  visibility: visible;
+  opacity: 1;
+}
+
+/***  Title Start ***/
+
+.header {
+  margin-top: -12rem;
+}
+
+.banner-caption h1 {
+  color: var(--white);
+  /* margin-left: -5rem; */
+  font-family: "Poppins";
+  font-size: 3rem;
+  /* margin-top: -15rem; */
+  text-align: center;
+}
+
+.banner-caption h4 {
+  color: #fff !important;
+  font-family: "Poppins";
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+.second-banner-caption {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.second-banner-caption img {
+  width: 20% !important;
+  margin: auto;
+  margin-bottom: 1rem;
+}
+
+.second-banner-caption h2 {
+  color: var(--white);
+  font-family: "Poppins";
+  font-size: 2rem;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.third-banner-caption {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.third-banner-caption img {
+  width: 18rem !important;
+  height: auto;
+  object-fit: cover;
+}
+
+.third-banner-caption h1 {
+  font-size: 3rem;
+  color: var(--white);
+  font-weight: 400;
+  font-family: "Poppins";
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.third-banner-caption h2 {
+  font-size: 2.6rem;
+  color: var(--white);
+  font-weight: 400;
+  font-family: "Poppins";
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.third-banner-caption h3 {
+  font-size: 1.6rem;
+  color: var(--white);
+  font-weight: 400;
+  font-family: "Poppins";
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.third-banner-caption h4 {
+  font-size: 3rem;
+  color: var(--secondary);
+  font-weight: 400;
+  font-family: "Poppins";
+  text-transform: capitalize;
+  margin-bottom: 2rem;
+  font-style: italic;
+  text-align: center;
+}
+
+.wellness-reality-concept h1 {
+  color: var(--primary);
+  font-weight: 500;
+  line-height: 1.2;
+  text-align: left;
+  padding-bottom: 0rem;
+  text-transform: uppercase;
+}
+
+.under_line_wellness_reality {
+  border-bottom: 2px solid var(--secondary);
+  width: 200px;
+  margin: 10px auto;
+  margin-left: 0;
+}
+
+.wellness-concept-list p {
+  font-size: 1rem;
+  text-align: left;
+  font-family: "Poppins";
+  margin: 1rem 0;
+  line-height: 1.5;
+  font-weight: normal;
+  color: var(--primary);
+}
+
+.wellness-concept-list ul {
+  padding-left: 0;
+}
+
+.wellness-concept-list ul li {
+  list-style: none;
+  padding-top: 2rem;
+  font-size: 1.2rem;
+  font-family: "Poppins";
+  font-weight: 400;
+  color: var(--primary);
+  text-transform: uppercase;
+}
+
+.map_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 2rem;
+}
+
+.map_container h2 {
+  font-size: 2.6rem;
+  font-family: "Poppins";
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 1.1;
+  color: var(--primary);
+  margin-bottom: 2rem;
+}
+
+.map_container p {
+  font-size: 16px;
+  font-family: "Poppins";
+  line-height: 1.2;
+  color: var(--primary);
+}
+
+.map_container span {
+  font-size: 1rem;
+  font-family: "Poppins";
+  line-height: 1.2;
+  color: var(--primary);
+  font-weight: 500;
+  margin: 1rem 0 2rem 0;
+}
+
+.map_container img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin-top: 2rem;
+  padding-bottom: 3rem;
+}
+
+.primary_heading {
+  color: var(--primary);
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+  text-align: center;
+  padding-top: 3rem;
+  position: relative;
+  padding-bottom: 1.5rem;
+  text-transform: uppercase;
+}
+
+.primary_heading_2 {
+  color: var(--secondary);
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+  text-align: center;
+  padding-top: 3rem;
+  position: relative;
+  padding-bottom: 1.5rem;
+  text-transform: uppercase;
+}
+
+.secondary_heading {
+  color: var(--primary);
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.tertiary_heading {
+  color: var(--tertiary);
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+.tertiary_heading_light {
+  color: var(--white);
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.benefits_text {
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--primary);
+  margin-top: 40px;
+  text-transform: uppercase;
+}
+
+.sub_title {
+  font-size: 26px;
+  color: var(--primary);
+  text-transform: uppercase;
+  margin-top: 0;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.horizontal_line {
+  border-bottom: 2px solid var(--secondary);
+  width: 200px;
+  margin: 20px auto;
+  margin-left: 0;
+}
+
+.horizontal_line_center {
+  border-bottom: 2px solid var(--secondary);
+  width: 300px;
+  margin: auto;
+  margin-top: -8px !important;
+}
+
+.horizontal_line_center_primary {
+  border-bottom: 2px solid var(--secondary);
+  width: 300px;
+  margin: auto;
+  margin-top: -8px !important;
+}
+
+.heading_carousel_section {
+  margin-left: 3rem;
+}
+
+.policy-page-banner {
+  background-image: url("https://www.canon.co.nz/-/media/new-zealand/stories/rach-stewart/rach-stewart-9-relected-lake-sunset.ashx?la=en-nz");
+  background-size: cover;
+  color: white;
+  text-align: center;
+  line-height: 400px;
+  background-position: center;
+}
+
+.policy-page-banner div {
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 5rem;
+  font-weight: bold;
+  color: var(--white);
+}
+
+.form-group {
+  display: block;
+  /* margin-bottom: 15px; */
+}
+
+.form-group input {
+  padding: 0;
+  height: initial;
+  width: initial;
+  margin-bottom: 0;
+  display: none;
+  cursor: pointer;
+}
+
+.form-group label {
+  position: relative;
+  cursor: pointer;
+  color: var(--secondary);
+}
+
+.form-group label:before {
+  content: "";
+  /* -webkit-appearance: none; */
+  background-color: transparent;
+  border: 2px solid var(--secondary);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05),
+    inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+  padding: 10px;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.form-group input:checked + label:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 4px;
+  left: 9px;
+  width: 6px;
+  height: 14px;
+  border: solid var(--secondary);
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.error-text {
+  color: #daccc6;
+  font-size: 0.8rem;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+@media (max-width: 1200px) {
+  .heading-0 {
+    font-size: 2.6rem !important;
+  }
+
+  .heading-1 {
+    font-size: 2.2rem !important;
+  }
+
+  .heading-2 {
+    font-size: 1.8rem !important;
+  }
+
+  .heading-3 {
+    font-size: 1.4rem !important;
+  }
+
+  .heading-4 {
+    font-size: 1rem !important;
+  }
+
+  /* .paragraph-1 {
+    font-size: 0.8rem !important;
+  }
+
+  .paragraph-2 {
+    font-size: 0.8rem !important;
+  } */
+}
+
+@media (max-width: 992px) {
+  /* .header {
+    margin-top: 0;
+  } */
+
+  .second-banner-caption img {
+    width: 15% !important;
+  }
+
+  .policy-page-banner {
+    line-height: 250px;
+  }
+
+  .policy-page-banner div {
+    font-size: 2.5rem;
+  }
+
+  .heading-0 {
+    font-size: 2.2rem !important;
+  }
+
+  .heading-1 {
+    font-size: 1.8rem !important;
+  }
+
+  .heading-2 {
+    font-size: 1.4rem !important;
+  }
+
+  .heading-3 {
+    font-size: 1rem !important;
+  }
+
+  .heading-4 {
+    font-size: 1rem !important;
+  }
+
+  .tertiary_heading_container {
+    margin-top: 2rem;
+  }
+
+  .banner_image_container {
+    padding: 0 3rem;
+    margin-top: 2rem;
+  }
+
+  .tertiary_padding {
+    padding: 0 2rem;
+  }
+
+  .wellness-reality-concept {
+    padding-top: 0;
+  }
+
+  .wellness-reality-concept h1 {
+    padding-bottom: 0.5rem;
+  }
+
+  .primary_heading_2 {
+    font-size: 2rem;
+    padding-top: 1rem;
+  }
+
+  .horizontal_line_center_primary {
+    width: 200px;
+  }
+
+  .wellness-concept-list ul li {
+    padding-top: 1rem;
+    font-size: 1rem;
+  }
+
+  .banner-caption-margin {
+    margin-top: 6rem;
+  }
+  .banner-caption h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .second-banner-caption img {
+    display: none !important;
+  }
+
+  .third-banner-caption img {
+    display: none !important;
+  }
+
+  .heading-0 {
+    font-size: 2rem !important;
+  }
+
+  .heading-1 {
+    font-size: 1.6rem !important;
+  }
+
+  .heading-2 {
+    font-size: 1.2rem !important;
+  }
+
+  .benefits_text {
+    font-size: 14px;
+  }
+
+  .sub_title {
+    font-size: 22px;
+  }
+
+  .primary_heading {
+    font-size: 1.5rem;
+  }
+
+  .map_container {
+    margin-left: 0rem;
+  }
+
+  .map_container span {
+    margin: 1rem 0 0rem 0;
+  }
+
+  .third-banner-caption img {
+    display: none !;
+  }
+}
+
+@media (max-width: 576px) {
+  .policy-page-banner {
+    line-height: 200px;
+  }
+
+  .policy-page-banner div {
+    font-size: 1.8rem;
+  }
+
+  .heading-0 {
+    font-size: 1.8rem !important;
+  }
+
+  .heading-1 {
+    font-size: 1.2rem !important;
+  }
+
+  .heading-2 {
+    font-size: 1.2rem !important;
+  }
+
+  .faq-page-banner div {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 470px) {
+  .benefits_text {
+    font-size: 10px;
+  }
+
+  .secondary_heading {
+    font-size: 1rem;
+    margin-top: 0;
+  }
+
+  .tertiary_heading {
+    font-size: 0.8rem;
+  }
+
+  .sub_title {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 440px) {
+  .primary_heading {
+    font-size: 1rem;
+    padding-top: 0rem;
+  }
+
+  .primary_heading::after {
+    width: 8rem;
+  }
+
+  .horizontal_line_center {
+    width: 200px;
+  }
+
+  .primary_heading_2 {
+    font-size: 1rem;
+  }
+
+  .banner-caption-margin {
+    margin-top: 7rem;
+  }
+
+  .banner-caption h1 {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 350px) {
+  .benefits_text {
+    font-size: 8px;
+  }
+
+  .secondary_heading {
+    font-size: 0.8rem;
+    margin-top: 0;
+  }
+
+  .sub_title {
+    font-size: 18px;
+  }
+}

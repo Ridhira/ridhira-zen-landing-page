@@ -1,0 +1,152 @@
+.table-container {
+  margin: auto;
+  border: 1px solid var(--secondary);
+  border-top: none;
+}
+
+.table-container thead {
+  font-family: "Poppins";
+}
+
+.head-1 {
+  font-size: 1.2rem;
+  color: #000;
+  background-color: #8d8a8a;
+  text-align: left;
+  font-weight: normal;
+  padding: 1rem 2rem;
+  width: 35%;
+}
+
+.head-2 {
+  font-size: 1.2rem;
+  color: #000;
+  background-color: #8d8a8a;
+  text-align: center;
+  font-weight: normal;
+  padding: 1rem 2rem;
+  width: 15%;
+}
+
+.head-3 {
+  font-size: 1.2rem;
+  color: #000;
+  background-color: #8d8a8a;
+  text-align: center;
+  font-weight: normal;
+  padding: 1rem 2rem;
+  width: 20%;
+}
+
+.head-4 {
+  font-size: 1.2rem;
+  color: white;
+  background-color: var(--secondary);
+  text-align: center;
+  font-weight: bold;
+  width: 20%;
+  padding: 1rem 2rem;
+}
+
+.list-item-1 {
+  font-size: 1.3rem;
+  color: #000;
+  font-weight: 500;
+  text-align: left;
+  padding-bottom: 0.5rem;
+  padding-left: 2rem;
+}
+
+.list-item-2 {
+  font-size: 1.3rem;
+  color: #000;
+  font-weight: 500;
+  text-align: center;
+  padding-bottom: 0.5rem;
+  /* padding-left: 2rem; */
+}
+
+.border-left-right {
+  border-left: 1px solid var(--primary);
+  border-right: 1px solid var(--primary);
+}
+
+tfoot p {
+  background-color: var(--secondary);
+  padding: 2rem;
+  text-align: center;
+  color: var(--primary);
+  font-size: 1.6rem;
+  font-family: "Poppins";
+  margin-bottom: 0;
+  width: 100%;
+}
+
+@media (max-width: 1200px) {
+  .head-1,
+  .head-2,
+  .head-3,
+  .head-4 {
+    font-size: 1rem;
+  }
+
+  .list-item-1,
+  .list-item-2 {
+    font-size: 1rem;
+  }
+
+  .list-item-1 {
+    padding: 1rem 1rem;
+  }
+
+  tfoot p {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 628px) {
+  .head-1,
+  .head-2,
+  .head-3,
+  .head-4 {
+    font-size: 0.8rem;
+    padding: 0.5rem;
+  }
+
+  .list-item-1,
+  .list-item-2 {
+    font-size: 0.8rem;
+  }
+
+  .list-item-1 {
+    padding: 1rem;
+  }
+
+  tfoot p {
+    font-size: 1rem;
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 359px) {
+  .head-1,
+  .head-2,
+  .head-3,
+  .head-4 {
+    font-size: 0.6rem;
+    padding: 0.3rem;
+  }
+
+  .list-item-1,
+  .list-item-2 {
+    font-size: 0.6rem;
+  }
+
+  .list-item-1 {
+    padding: 0.5rem;
+  }
+
+  tfoot p {
+    font-size: 0.8rem;
+  }
+}

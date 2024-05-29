@@ -1,0 +1,507 @@
+.contact-page-banner {
+  background-image: url(../img/Contact-Us/Images/contact-us-banner-7.jpg);
+  background-size: cover;
+  color: white;
+  text-align: center;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  margin-top: -11rem;
+}
+
+.banner_heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.banner_heading h2 {
+  font-size: 3rem;
+  color: var(--white);
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.contact_us_container {
+  max-width: 60%;
+}
+
+.contact_us_container h3 {
+  font-size: 3rem;
+  font-weight: 600;
+  color: var(--primary);
+}
+
+.contact_us_container p {
+  font-size: 0.9rem;
+  color: var(--grey);
+  margin-top: 3rem;
+}
+
+.contact_us_line {
+  border-bottom: 2px solid var(--secondary);
+  width: 200px;
+  margin-bottom: 1rem;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.details_container {
+  margin-top: 4rem;
+}
+
+.your_details_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.your_details_container h6 {
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.your_details_container p {
+  margin-bottom: 0;
+  font-size: 0.9rem;
+  color: var(--grey);
+  margin-top: 0rem;
+}
+
+.your_details_line_top {
+  border-bottom: 1px solid #d8d2d2;
+  width: 60%;
+  margin-top: 8px;
+  border-width: thin;
+}
+
+.your_details_line_bottom {
+  border-bottom: 1px solid #d8d2d2;
+  width: 100%;
+  margin-top: 8px;
+  border-width: thin;
+}
+
+.bottom_heading {
+  margin-top: 3rem;
+}
+
+form {
+  width: 60%;
+}
+
+.input_field {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 2rem;
+}
+
+.input_field label {
+  font-size: 1rem;
+  color: var(--primary);
+  padding-bottom: 0.5rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.input_field label span {
+  font-size: 1.2rem;
+  color: red;
+}
+
+.input_field input,
+.input_field textarea {
+  width: 100%;
+  /* height: 3rem; */
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.075);
+  outline: none;
+  color: var(--primary);
+  resize: none;
+  border-bottom: 2px solid transparent;
+}
+
+.input_field input:focus,
+.input_field textarea:focus {
+  outline: none;
+  box-shadow: 0 1rem 2rem rgba(#000, 0.1);
+  border-bottom: 2px solid green;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.input_field input:focus:invalid,
+.input_field textarea:focus:invalid {
+  border-bottom: 2px solid red;
+}
+
+::placeholder {
+  color: var(--grey) !important;
+  padding-left: 0.4rem;
+}
+
+form button {
+  padding: 0.5rem 1.5rem;
+  margin-top: 2rem;
+  border: none;
+  background-color: var(--secondary);
+  color: var(--white);
+  box-shadow: 0 0.5rem 1rem rgba(#000, 0.2);
+  transition: 0.2s ease-in;
+}
+
+form button:hover {
+  padding: 0.5rem 1.5rem;
+  margin-top: 2rem;
+  border: none;
+  background-color: var(--solid);
+  color: var(--white);
+  box-shadow: 0 0.5rem 1rem rgba(#000, 0.2);
+  transform: translateY(-0.3rem);
+}
+
+form button:active,
+form button:focus {
+  transform: translateY(-0rem);
+  box-shadow: 0 0.5rem 1rem rgba(#000, 0.2);
+  outline: none;
+}
+
+.contact_us_map {
+  width: 100%;
+  height: 600px;
+}
+
+/* //////////////////////////////////////// */
+/* //////////////////////////////////////// */
+/* IMAGE AND TITLE CSS START FROM HERE */
+
+.title_image_container {
+  position: relative;
+  height: 50rem;
+}
+
+.background_div {
+  width: 32rem;
+  height: 22rem;
+  background-color: var(--secondary);
+  position: absolute;
+  z-index: -3;
+  left: 0rem;
+  top: 12rem;
+}
+
+.image_class_1 {
+  width: 80%;
+  height: 20rem;
+  object-fit: cover;
+  position: absolute;
+  z-index: -2;
+  top: 6rem;
+  left: 4rem;
+  border: 4px solid #e7e7e7;
+}
+
+.image_class_2 {
+  width: 85%;
+  height: 20rem;
+  object-fit: cover;
+  position: absolute;
+  z-index: -1;
+  top: 22rem;
+  left: -5.2rem;
+  border: 4px solid #e7e7e7;
+}
+
+.resort_text_heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.resort_text_heading h3 {
+  font-size: 4rem;
+  font-weight: 700;
+  color: var(--secondary);
+}
+
+.contact_fields {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+}
+
+.contact_fields_container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.contact_fields_container i {
+  font-size: 2.5rem;
+  color: var(--secondary);
+  padding: 1rem 0;
+}
+
+.contact_fields_container span:first-of-type {
+  font-size: 1rem;
+  color: var(--black);
+  font-weight: 600;
+}
+
+.contact_fields_container span:last-of-type {
+  font-size: 1rem;
+  color: var(--secondary);
+  font-weight: 400;
+}
+
+@media (max-width: 1500px) {
+  .title_container {
+    margin-left: 10%;
+  }
+}
+
+@media (max-width: 1400px) {
+  .background_div {
+    width: 28rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .resort_text_heading {
+    align-items: center;
+    padding-bottom: 2rem;
+  }
+
+  .title_container {
+    margin-left: auto;
+  }
+
+  .title_image_container {
+    position: relative;
+    height: 45rem;
+  }
+
+  .background_div {
+    /* display: none; */
+    width: 35rem;
+    left: 48%;
+    transform: translate(-50%, 0);
+  }
+
+  .image_class_1 {
+    width: 60%;
+    height: 20rem;
+    object-fit: cover;
+    position: absolute;
+    z-index: -2;
+    top: 6rem;
+    left: 60%;
+    transform: translate(-60%, 0);
+    border: 4px solid #e7e7e7;
+  }
+
+  .image_class_2 {
+    width: 60%;
+    height: 20rem;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+    top: 22rem;
+    left: 30%;
+    transform: translate(-30%, 0);
+    border: 4px solid #e7e7e7;
+  }
+}
+
+@media (max-width: 992px) {
+  /* .contact-us-page-banner {
+    line-height: 250px;
+  }
+
+  .contact-us-page-banner div {
+    font-size: 2.5rem;
+  } */
+
+  .contact-page-banner {
+    height: 60vh;
+    margin-top: 0;
+  }
+
+  .background_div {
+    width: 25rem;
+    left: 48%;
+    transform: translate(-50%, 0);
+  }
+
+  .contact_us_container {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .contact_us_line {
+    margin: auto;
+  }
+
+  form {
+    margin-bottom: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .background_div {
+    width: 18rem;
+    left: 48%;
+    transform: translate(-50%, 0);
+  }
+
+  .resort_text_heading h3 {
+    font-size: 2.52rem;
+    font-weight: 700;
+    color: var(--secondary);
+  }
+
+  .resort_text_heading p {
+    font-size: 0.8rem;
+    text-align: center;
+  }
+
+  .contact_fields_container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact_fields_container i {
+    font-size: 2rem;
+  }
+
+  .contact_fields_container span:first-of-type {
+    font-size: 0.8rem;
+  }
+
+  .contact_fields_container span:last-of-type {
+    font-size: 0.8rem;
+  }
+
+  .contact_us_container h3 {
+    font-size: 2rem;
+  }
+
+  .contact_us_container p {
+    margin-top: 2rem;
+  }
+
+  .contact_us_line {
+    width: 100px;
+  }
+
+  .details_container {
+    margin-top: 2rem;
+  }
+
+  form {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 3rem;
+  }
+
+  .your_details_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact_us_map {
+    height: 400px;
+  }
+
+  form button {
+    width: 100%;
+  }
+
+  .bottom_heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .bottom_heading p {
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  /* .contact-us-page-banner {
+    line-height: 200px;
+  }
+
+  .contact-us-page-banner div {
+    font-size: 1.8rem;
+  } */
+
+  .contact-page-banner {
+    height: 40vh;
+    margin-top: 0;
+  }
+
+  .background_div {
+    display: none;
+  }
+
+  .image_class_1 {
+    width: 70%;
+    height: 20rem;
+    object-fit: cover;
+    position: absolute;
+    z-index: -2;
+    top: 3rem;
+    left: 60%;
+    transform: translate(-60%, 0);
+    border: 4px solid #e7e7e7;
+  }
+
+  .image_class_2 {
+    width: 70%;
+    height: 20rem;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+    top: 18rem;
+    left: 30%;
+    transform: translate(-30%, 0);
+    border: 4px solid #e7e7e7;
+  }
+
+  .resort_text_heading h3 {
+    font-size: 2rem;
+  }
+
+  .contact_fields {
+    width: 80%;
+  }
+
+  .contact_us_container h3 {
+    font-size: 1.5rem;
+  }
+
+  .contact_us_container p {
+    padding: 0 1rem;
+  }
+
+  .contact_us_map {
+    height: 300px;
+  }
+}

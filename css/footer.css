@@ -1,0 +1,143 @@
+.section-one {
+  border-right: 2px solid var(--secondary);
+}
+
+.contact_us_heading h1 {
+  color: var(--secondary);
+  text-transform: uppercase;
+  font-weight: 500;
+  line-height: 1.2;
+  text-align: center;
+  display: table;
+  margin: auto;
+  padding-bottom: 10px;
+  background: linear-gradient(#d2a765, #d2a765) bottom / 70% 2px no-repeat;
+  margin-bottom: 2rem;
+}
+
+form > input,
+form > textarea {
+  width: 40%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--secondary);
+  margin-bottom: 1rem;
+  color: var(--secondary);
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  padding: 0.5rem 1rem;
+  margin-right: 3rem;
+}
+
+form > input:focus,
+form > textarea {
+  outline: none;
+  resize: none;
+}
+
+.term_text {
+  width: 80%;
+  color: var(--secondary);
+  font-weight: 500;
+}
+
+::placeholder {
+  color: var(--secondary);
+  opacity: 1;
+}
+
+.submit_btn {
+  width: max-content;
+  padding: 10px 80px !important;
+  margin-top: 20px;
+  color: var(--secondary);
+  padding: 5px 40px;
+  margin-right: 40px;
+  border-radius: 2px;
+  background-color: transparent;
+  border: 1px solid var(--secondary);
+  font-weight: 600;
+  transition: 0.5s;
+}
+
+.submit_btn:hover {
+  background-color: var(--secondary);
+  color: var(--dark);
+}
+
+.office_address,
+.site_address {
+  padding: 0 0rem 0 2rem;
+  margin-bottom: 2rem;
+}
+
+.site_address {
+  margin-bottom: 0;
+}
+
+.office_address > h6,
+.site_address > h6 {
+  color: var(--secondary);
+  font-weight: 700;
+}
+
+.office_address > p,
+.site_address > p,
+.site_address small {
+  color: var(--secondary);
+  margin-bottom: 3px;
+}
+
+.copyright {
+  margin-top: 3rem;
+}
+
+.copyright p:first-child {
+  text-align: center;
+  color: var(--secondary);
+}
+
+.copyright p:last-child {
+  text-align: center;
+  margin-top: 1rem;
+  color: var(--secondary);
+}
+
+.copyright a {
+  color: var(--white);
+  transition: all 0.2s;
+  font-weight: bold;
+}
+
+@media (max-width: 992px) {
+  .section-one {
+    border-right: none;
+    margin-bottom: 3rem;
+  }
+
+  .section-one > div > h1 {
+    text-align: center;
+  }
+
+  .section-one > div > div {
+    border-bottom: 2px solid var(--primary);
+    width: 100px;
+    margin: auto;
+    margin-top: 12px !important;
+    color: var(--primary);
+    margin-bottom: 2rem;
+  }
+
+  form > input,
+  form > textarea {
+    width: 100%;
+  }
+
+  .term_text {
+    width: 100%;
+  }
+
+  .copyright {
+    margin-top: 2rem;
+  }
+}

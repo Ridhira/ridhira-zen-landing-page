@@ -1,0 +1,90 @@
+.plot_section_container {
+  background-image: url(../img/Home/Images/plot-banner-2.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  width: 100%;
+  position: relative;
+}
+
+.plot_section {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-30%, -50%);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.plot_section_text {
+  width: 50%;
+}
+
+.plot_section_text h2 {
+  color: var(--white);
+  font-size: 3rem;
+  /* text-transform: uppercase; */
+  font-weight: 600;
+}
+
+.plot_section_text p {
+  color: var(--white);
+  font-size: 1rem;
+  line-height: 2;
+  margin-bottom: 0;
+}
+
+.plot_sizes {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  /* gap: 1.6rem; */
+}
+
+.plot_sizes h4 {
+  font-size: 2rem;
+  color: var(--white);
+  font-weight: 400;
+}
+
+/* @media (max-width: 1200px) {
+  .plot_section_text p {
+    line-height: 1.5;
+  }
+} */
+
+@media (max-width: 992px) {
+  .plot_section_container {
+    height: 500px;
+  }
+
+  .plot_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    width: 100% !important;
+    padding: 2rem 0;
+  }
+
+  .plot_section_text {
+    width: 80%;
+  }
+
+  .plot_section_text p {
+    line-height: 1.5;
+  }
+
+  .plot_sizes {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 0 2rem;
+  }
+}
